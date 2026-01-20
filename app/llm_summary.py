@@ -54,7 +54,7 @@ async def generate_llm_summary(
         Generated summary string, or None if LLM is unavailable
     """
     # Get API key (priority: parameter > env var > default)
-    key = api_key or os.environ.get("GEMINI_API_KEY") or DEFAULT_GEMINI_API_KEY
+    key = api_key or os.environ.get("GEMINI_API_KEY")
     if not key:
         return None
     
