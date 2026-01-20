@@ -15,8 +15,6 @@ from .aggregation import prepare_cluster_summary_for_llm
 
 
 # Default API key (Gemini free tier)
-# DEFAULT_GEMINI_API_KEY = "AIzaSyDawYx2FhXhxaDf0khtiWPll5wdQX_5o70"
-
 # Gemini API endpoint
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
