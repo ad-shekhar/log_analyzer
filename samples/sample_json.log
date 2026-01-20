@@ -1,0 +1,16 @@
+{"timestamp": "2024-01-15T10:30:00.001Z", "level": "INFO", "logger": "main", "message": "Application starting up"}
+{"timestamp": "2024-01-15T10:30:00.050Z", "level": "DEBUG", "logger": "config", "message": "Loading configuration from /etc/app/config.yaml"}
+{"timestamp": "2024-01-15T10:30:00.100Z", "level": "INFO", "logger": "database", "message": "Connecting to PostgreSQL at 192.168.1.100:5432"}
+{"timestamp": "2024-01-15T10:30:05.000Z", "level": "ERROR", "logger": "database", "message": "Connection failed", "error": {"type": "ConnectionRefusedError", "message": "Connection to 192.168.1.100:5432 refused", "stack": "at connect (db.js:45)\n  at Pool.getConnection (pool.js:89)"}}
+{"timestamp": "2024-01-15T10:30:10.000Z", "level": "ERROR", "logger": "database", "message": "Connection failed", "error": {"type": "ConnectionRefusedError", "message": "Connection to 192.168.1.100:5432 refused"}}
+{"timestamp": "2024-01-15T10:30:15.000Z", "level": "ERROR", "logger": "database", "message": "Connection failed", "error": {"type": "ConnectionRefusedError", "message": "Connection to 192.168.1.101:5432 refused"}}
+{"timestamp": "2024-01-15T10:30:20.000Z", "level": "FATAL", "logger": "database", "message": "Database unavailable - all replicas failed"}
+{"timestamp": "2024-01-15T10:30:25.000Z", "level": "ERROR", "logger": "api", "message": "Request failed", "request_id": "550e8400-e29b-41d4-a716-446655440000", "error": "ServiceUnavailableException: Database connection unavailable"}
+{"timestamp": "2024-01-15T10:30:30.000Z", "level": "ERROR", "logger": "api", "message": "Request failed", "request_id": "660e8400-e29b-41d4-a716-446655440001", "error": "ServiceUnavailableException: Database connection unavailable"}
+{"timestamp": "2024-01-15T10:30:35.000Z", "level": "WARN", "logger": "circuit-breaker", "message": "Circuit breaker OPEN for database service"}
+{"timestamp": "2024-01-15T10:30:40.000Z", "level": "INFO", "logger": "health", "message": "Health check failed - service unhealthy"}
+{"timestamp": "2024-01-15T10:30:45.000Z", "level": "ERROR", "logger": "auth", "message": "Authentication failed for user admin@example.com from 203.0.113.50"}
+{"timestamp": "2024-01-15T10:30:50.000Z", "level": "ERROR", "logger": "auth", "message": "Authentication failed for user admin@example.com from 203.0.113.51"}
+{"timestamp": "2024-01-15T10:30:55.000Z", "level": "ERROR", "logger": "auth", "message": "Authentication failed for user test@example.com from 203.0.113.50"}
+{"timestamp": "2024-01-15T10:31:00.000Z", "level": "WARN", "logger": "security", "message": "Potential brute force attack detected from 203.0.113.50"}
+{"timestamp": "2024-01-15T10:31:05.000Z", "level": "INFO", "logger": "security", "message": "IP 203.0.113.50 blocked for 15 minutes"}
